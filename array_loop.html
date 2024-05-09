@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+
+    <div id="container"></div>
+    
+    <script>
+        containerObj=document.getElementById("container");
+        s=['Thor','Avenger','Spiderman','Superman'];
+
+        render()
+
+        function render(){
+            containerObj.innerHTML='';
+            // containerObj.innerHTML+=`<h1>${s[0]}</h1>`
+            // containerObj.innerHTML+=`<h1>${s[1]}</h1>`
+            // containerObj.innerHTML+=`<h1>${s[2]}</h1>`
+            // containerObj.innerHTML+=`<h1>${s[3]}</h1>`
+            for(i=0;i<s.length;i++){
+
+                containerObj.innerHTML+=`<h1>${s[i]}</h1>`
+            }
+
+
+        }
+
+
+
+    </script>
+
+</body>
+</html>
